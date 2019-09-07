@@ -1,4 +1,14 @@
 <link rel="stylesheet" href="styles.css">
+<style type="text/css">
+td
+{
+    padding:0 15px 0 15px;
+}
+tr
+{
+    padding:0 15px 0 15px;
+}
+</style>
 <!DOCTYPE html>
 <html>
   <head>
@@ -8,7 +18,13 @@
   <body class = "gradient">
 	<div class="center">
 		<div class="mainText fade hover">Welcome</div><br>
-		<button class="button" onclick="window.location.href = 'route1';" type="button"> Submit Request</button>
+		<table>
+			<tr><td>
+			<button class="button" onclick="window.location.href = 'route1';" type="button"> Create Campaign</button>
+			</td><td>
+			<button class="button" onclick="window.location.href = 'unnamedRoute';" type="button"> View Data</button>
+			</td></tr>
+		</table>
 	</div>
   </body>
 </html>
