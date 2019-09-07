@@ -1,4 +1,10 @@
 <link rel="stylesheet" href="styles.css">
+<style type="text/css">
+td
+{
+    padding:0 15px 0 15px;
+}
+</style>
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,8 +13,17 @@
 	<script type="text/javascript" src="bundle.js"></script>
   <body class = "gradient">
 	<div class="center">
-		<div class="mainText fade hover">Hello</div><br>
-		<button class="button" onclick="index.html> Submit Request</button>
+		<div class="mainText">Enter Information</div><br>
+		<form class="subText">
+		Field 1: <br>
+		<input type="text" name="first"><br>
+		Field 2: <br>
+		<input type="text" name="second"><br>
+		</form>
+		<table><tr><td>
+		<button class="button" onclick="window.location.href = 'index';" type="button"> Submit </button></td>
+		<td><button class="button" onclick="window.location.href = 'index';" type="button"> Go Back </button>
+		</td></tr></table>
 	</div>
   </body>
 </html>

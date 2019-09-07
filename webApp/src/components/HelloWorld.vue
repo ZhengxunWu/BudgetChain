@@ -1,33 +1,17 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
-    <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
-    </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
-  </div>
+  <head>
+    <title>BudgetChain</title>
+  </head>
+  <body>
+	<span v-html="rawHtml">
+	  <body class = "gradient">
+		<div class="center">
+			<div class="mainText fade hover">Hi</div><br>
+			<button class="button" onclick="window.location.href = 'route1';" type="button"> Submit Request</button>
+		</div>
+	  </body>
+	</span>
+  </body>
 </template>
 
 <script>
@@ -55,4 +39,75 @@ li {
 a {
   color: #42b983;
 }
+
+header {
+  display: block;
+  background-color: black;
+  width: 100%;
+  height: 50px;
+  color: white;
+}
+
+button {
+  background-color: blue;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: green;
+}
+fade{
+	opacity:0.5;
+}
+fade:hover{
+	opacity:1;
+}
+grow:hover
+{
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+gradient{
+	background-image: linear-gradient(blue, cyan);
+}
+mainText{
+	text-align: center;
+	font-size: 30pt;
+	color: white
+}
+center{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+swing:hover
+{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+headerButtons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+navButton {
+  float: right;
+}
+footer {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+
 </style>

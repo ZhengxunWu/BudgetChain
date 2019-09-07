@@ -35,7 +35,11 @@ header {
 }
 .mainText{
 	text-align: center;
-	font-size: 30pt;
+	font-size: 50pt;
+	color: white
+}
+.subText{
+	font-size: 15pt;
 	color: white
 }
 .center{
